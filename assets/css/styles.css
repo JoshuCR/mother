@@ -151,7 +151,7 @@ main {
 
 .modal-contenido {
     max-width: 90%;
-    max-height: 90vh;
+    max-height: 80vh;
     width: auto;
     height: auto;
     object-fit: contain;
