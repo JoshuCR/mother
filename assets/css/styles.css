@@ -174,6 +174,7 @@ main {
     font-family: 'Anthony Hunter';
     src: url('assets/fonts/anthonyhunter.woff2') format('woff2'),
     url('assets/fonts/anthonyhunter.woff') format('woff');
+    font-display: swap; /* ¡Esto evita que se vea Arial! */
     font-weight: normal;
     font-style: normal;
 }
