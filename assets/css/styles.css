@@ -172,7 +172,7 @@ main {
 
 @font-face {
     font-family: 'Anthony Hunter';
-    src: url('assets/fonts/anthonyhunter.woff') format('woff'),
+    src: url('assets/fonts/anthonyhunter.woff2') format('woff2'),
     url('assets/fonts/anthonyhunter.woff') format('woff');
     font-weight: normal;
     font-style: normal;
