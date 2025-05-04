@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+    text-align: center;
+}
+
+.logo {
+    width: 275px;
+    margin-top: 20px;
+}
+
+header {
+    position: relative; /* Necesario para el posicionamiento */
+    min-height: 200px;
+    padding: 20px;
+    overflow: hidden; /* Recorta la imagen si sobresale */
+}
+
+.fondo-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Equivalente a background-size: cover */
+    z-index: 0; /* Lo envía al fondo */
+}
+
+header > *:not(.fondo-header) {
+    position: relative;
+    z-index: 1; /* Asegura que el texto/logos estén sobre la imagen */
+}
+.frase {
+    font-size: 1.2em;
+    color: #b22222;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    min-height: 520px;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.descripcion {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #444;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+
+
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #ff1493;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.zoom-in {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 150px;
+    }
+
+    .frase {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    .producto {
+        width: 95%;
+        min-height: auto;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding: 1rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    max-width: 90%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Anthony Hunter';
+    src: url('assets/fonts/anthonyhunter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fade-in, .fade-in * {
+    font-family: 'Anthony Hunter', sans-serif;
+}
+
+.fade-in h1 {
+    font-size: 68px;
+    color: #d13a7b;
+    margin: 5px 0;
+}
+
+.fade-in .frase {
+    font-size: 44px;
+    color: #b22222;
+    margin: 5px 0;
+}
+
+.fade-in img.logo {
+    margin: 10px 0;
+}
+
+.estrellas {
+    position: fixed;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .estrellas.izquierda {
+    left: 0;
+  }
+  
+  .estrellas.derecha {
+    right: 0;
+  }
+  
+  .estrella {
+    position: absolute;
+    font-size: 20px;
+    color: gold;
+    animation: caerEstrella 5s linear infinite;
+    opacity: 0.9;
+  }
+  
+  .estrella:nth-child(odd) {
+    color: #c0c0c0;
+  }
+  
+  .estrella:nth-child(1) { left: 10px; animation-delay: 0s; }
+  .estrella:nth-child(2) { left: 30px; animation-delay: 1s; }
+  .estrella:nth-child(3) { left: 20px; animation-delay: 2s; }
+  .estrella:nth-child(4) { left: 40px; animation-delay: 3s; }
+  .estrella:nth-child(5) { left: 15px; animation-delay: 4s; }
+  
+  @keyframes caerEstrella {
+    0% {
+      top: -10%;
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      top: 110%;
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
