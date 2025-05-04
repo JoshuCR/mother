@@ -170,29 +170,26 @@ main {
     cursor: pointer;
 }
 
-@font-face {
-    font-family: 'Anthony Hunter';
-    src: url('assets/fonts/anthonyhunter.woff2') format('woff2'),
-    url('assets/fonts/anthonyhunter.woff') format('woff');
-    font-display: swap; /* ¡Esto evita que se vea Arial! */
-    font-weight: normal;
-    font-style: normal;
+/* === Fuente Dancing Script para TODO el header === */
+header.fade-in {
+    font-family: 'Dancing Script', cursive; /* Aplica a todo el header */
+    font-weight: 700; /* Negrita */
+    padding: 20px;
+    background-color: #ffe4e1; 
+    text-align: center;
 }
 
-.fade-in, .fade-in * {
-    font-family: 'Anthony Hunter', sans-serif;
+/* Ajustes específicos para elementos internos */
+header.fade-in h1 {
+    font-size: 3rem; /* Tamaño grande para el título */
+    margin: 10px 0; /* Espaciado */
+    color: #d23669; /* Color rosa/rojo */
 }
 
-.fade-in h1 {
-    font-size: 68px;
-    color: #d13a7b;
-    margin: 5px 0;
-}
-
-.fade-in .frase {
-    font-size: 44px;
-    color: #b22222;
-    margin: 5px 0;
+header.fade-in .frase {
+    font-size: 1.8rem; /* Tamaño mediano para la frase */
+    font-style: italic; /* Opcional: cursiva ligera */
+    color: #333; /* Color oscuro para contraste */
 }
 
 .fade-in img.logo {
