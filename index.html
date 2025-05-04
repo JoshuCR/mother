@@ -231,6 +231,21 @@
         <div class="estrella">✦</div>
         <div class="estrella">✦</div>
       </div>
-      
+        <script>
+    document.addEventListener('click', function () {
+      const audio = document.getElementById('audio');
+      audio.volume = 0.2; // volumen bajo
+      audio.play();
+
+      // Pausar cuando el usuario salga de la pestaña
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+          audio.pause();
+        } else {
+          audio.play();
+        }
+      });
+    }, { once: true });
+  </script>
 </body>
 </html>
