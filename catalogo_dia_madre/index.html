@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Día de la Madre</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <audio id="audio" loop>
+        <source src="assets/audio/musica.mp3" type="audio/mp3">
+        Tu navegador no soporta audio HTML5.
+      </audio>
+      
+      <script>
+        document.addEventListener('click', function () {
+          const audio = document.getElementById('audio');
+          audio.volume = 0.2; // volumen bajo
+          audio.play();
+        }, { once: true });
+      </script>
+      
+      <header class="fade-in">
+        <img src="assets/images/tu.jpg" class="fondo-header" aria-hidden="true">
+        <img src="assets/images/logo.png" alt="Logo" class="logo">
+        <h1>¡Feliz Día Mamá!</h1>
+        <p class="frase">"Gracias por ser el pilar que sostiene todo."</p>
+    </header>
+    <main>
+        <div class="producto zoom-in">
+            <img src="assets/images/producto1.jpg" alt="Producto 1" onclick="ampliarImagen(this)">
+            <h2>Dulce Armonía para Mamá</h2>
+            <p> Delicado arreglo con rosas lilas, rosas rosadas y alstroemerias blancas, presentado en una elegante caja y acompañado de un globo metálico en forma de corazón con el mensaje "Happy Mother's Day". Un detalle tierno y especial para consentir a mamá.</p>
+            <span>$28.00</span>
+            <a class="boton" href="https://wa.me/593984548776?text=Hola,%20quiero%20el%20Producto%201">Ordenar por WhatsApp</a>
+        </div>
+        
+        <div class="producto zoom-in">
+            <img src="assets/images/producto2.jpg" alt="Producto 1" onclick="ampliarImagen(this)">
+            <h2>Globo de Amor</h2>
+            <p>Arreglo en base cilíndrica con rosas rojas y follaje decorativo, coronado por un globo burbuja transparente con globos internos en tonos rosados y mensaje “Happy Mother’s Day”. Un regalo alegre y encantador que transmite amor en cada detalle.</p>
+            <span>$12.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%201">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto3.jpg" alt="Producto 2" onclick="ampliarImagen(this)">
+            <h2>Desayuno con Amor para Mamá</h2>
+            <p>Caja en forma de corazón decorada con moño, incluye flores frescas, globo burbuja con mensaje “Feliz Día de la Madre” y un desayuno con jugo, galletas, panecillo y botana dulce. Un regalo completo para sorprender con cariño y sabor.</p>
+            <span>$14.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%202">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto4.jpg" alt="Producto 3" onclick="ampliarImagen(this)">
+            <h2>Caja Girasol Amoroso</h2>
+            <p>Un detalle encantador con rosas artificiales, un girasol decorativo y un perfume, todo dentro de una elegante caja con la frase “La mejor madre del mundo”.</p>
+            <span>$16.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%203">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto5.jpg" alt="Producto 4" onclick="ampliarImagen(this)">
+            <h2>Caja “Amor Incondicional”</h2>
+            <p>Una caja con estilo rústico y elegante que celebra el amor de mamá. Incluye un girasol artesanal en tela, deliciosos chocolates Ferrero Rocher y un llavero personalizado con la palabra “Mamá”. Acompañado de una fotografía especial y un mensaje conmovedor: "Mamá, eres la mejor".</p>
+            <span>$18.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%204">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto6.jpg" alt="Producto 5" onclick="ampliarImagen(this)">
+            <h2>Caja “Te Amo Mamá”</h2>
+            <p>Una explosión de amor y dulzura en una presentación llena de color. Esta caja incluye una taza decorativa con la frase “Te amo mamá”, chocolates Ferrero Rocher, snacks variados, frutos secos, y detalles decorativos con la temática de supermamá. Con un mensaje alegre que resalta el papel de mamá como amiga, confidente y heroína. ¡Un regalo lleno de energía y cariño!</p>
+            <span>$20.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%205">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto7.jpg" alt="Producto 6" onclick="ampliarImagen(this)">
+            <h2>Caja “Mamá Increíble”</h2>
+            <p>Delicado y tierno regalo que combina flores frescas en tonos pastel con una selección de productos como snacks, jugo natural, una vela decorativa y detalles personalizados. Presentado en una caja decorada con banderines y el mensaje “Eres una mamá increíble”, ideal para sorprender con amor en su día especial.</p>
+            <span>$22.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%206">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto8.jpg" alt="Producto 7" onclick="ampliarImagen(this)">
+            <h2>Producto 7</h2>
+            <p>Descripción breve del producto 7.</p>
+            <span>$24.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%207">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto9.jpg" alt="Producto 8" onclick="ampliarImagen(this)">
+            <h2>Producto 8</h2>
+            <p>Descripción breve del producto 8.</p>
+            <span>$26.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%208">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto10.jpg" alt="Producto 9" onclick="ampliarImagen(this)">
+            <h2>Producto 9</h2>
+            <p>Descripción breve del producto 9.</p>
+            <span>$28.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%209">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto11.jpg" alt="Producto 10" onclick="ampliarImagen(this)">
+            <h2>Producto 10</h2>
+            <p>Descripción breve del producto 10.</p>
+            <span>$30.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2010">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto12.jpg" alt="Producto 11" onclick="ampliarImagen(this)">
+            <h2>Producto 11</h2>
+            <p>Descripción breve del producto 11.</p>
+            <span>$32.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2011">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto13.jpg" alt="Producto 12" onclick="ampliarImagen(this)">
+            <h2>Producto 12</h2>
+            <p>Descripción breve del producto 12.</p>
+            <span>$34.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2012">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto14.jpg" alt="Producto 13" onclick="ampliarImagen(this)">
+            <h2>Producto 13</h2>
+            <p>Descripción breve del producto 13.</p>
+            <span>$36.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2013">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto15.jpg" alt="Producto 14" onclick="ampliarImagen(this)">
+            <h2>Producto 14</h2>
+            <p>Descripción breve del producto 14.</p>
+            <span>$38.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2014">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto16.jpg" alt="Producto 15" onclick="ampliarImagen(this)">
+            <h2>Producto 15</h2>
+            <p>Descripción breve del producto 15.</p>
+            <span>$40.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2015">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto17.jpg" alt="Producto 16" onclick="ampliarImagen(this)">
+            <h2>Producto 16</h2>
+            <p>Descripción breve del producto 16.</p>
+            <span>$42.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2016">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto18.jpg" alt="Producto 17" onclick="ampliarImagen(this)">
+            <h2>Producto 17</h2>
+            <p>Descripción breve del producto 17.</p>
+            <span>$44.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2017">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div class="producto zoom-in">
+            <img src="assets/images/producto19.jpg" alt="Producto 18" onclick="ampliarImagen(this)">
+            <h2>Producto 19</h2>
+            <p>Descripción breve del producto 18.</p>
+            <span>$46.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2018">Ordenar por WhatsApp</a>
+        </div>
+        <div class="producto zoom-in">
+            <img src="assets/images/producto20.jpg" alt="Producto 18" onclick="ampliarImagen(this)">
+            <h2>Producto 20</h2>
+            <p>Descripción breve del producto 18.</p>
+            <span>$46.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2018">Ordenar por WhatsApp</a>
+        </div>
+        <div class="producto zoom-in">
+            <img src="assets/images/producto21.jpg" alt="Producto 18" onclick="ampliarImagen(this)">
+            <h2>Producto 21</h2>
+            <p>Descripción breve del producto 18.</p>
+            <span>$46.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2018">Ordenar por WhatsApp</a>
+        </div>
+        <div class="producto zoom-in">
+            <img src="assets/images/producto22.jpg" alt="Producto 18" onclick="ampliarImagen(this)">
+            <h2>Producto 22</h2>
+            <p>Descripción breve del producto 18.</p>
+            <span>$46.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2018">Ordenar por WhatsApp</a>
+        </div>
+        <div class="producto zoom-in">
+            <img src="assets/images/producto23.jpg" alt="Producto 18" onclick="ampliarImagen(this)">
+            <h2>Producto 23</h2>
+            <p>Descripción breve del producto 18.</p>
+            <span>$46.00</span>
+            <a class="boton" href="https://wa.me/1234567890?text=Hola,%20quiero%20el%20Producto%2018">Ordenar por WhatsApp</a>
+        </div>
+    
+        <div id="modal" class="modal" onclick="cerrarModal()">
+            <span class="cerrar">&times;</span>
+            <img class="modal-contenido" id="img-ampliada">
+        </div>
+        
+
+    </main>
+    <script src="assets/js/scripts.js"></script>
+    <div class="estrellas izquierda">
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+      </div>
+      
+      <div class="estrellas derecha">
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+        <div class="estrella">✦</div>
+      </div>
+      
+</body>
+</html>
